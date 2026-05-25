@@ -1,0 +1,79 @@
+{
+  "company": {
+    "name": "Cobe",
+    "tagline": "Websites, die begeistern.",
+    "subtag": "Ergebnisse, die überzeugen.",
+    "desc": "Wir gestalten individuelle Websites, die Ihre Marke einzigartig machen – mit einer kostenlosen Demo, damit Sie zuerst sehen, was wir können.",
+    "email": "webdesign.cobe@gmail.com",
+    "phone": "015906355958",
+    "response": "Innerhalb von 48 Stunden",
+    "instagram": "https://www.instagram.com/webdesign_cobe",
+    "address": {
+      "name": "Benjamin Bonk",
+      "street": "Römerstraße 4",
+      "city": "82284 Grafrath"
+    },
+    "formAction": "https://formspree.io/f/maqvnrgk"
+  },
+  "stats": [
+    { "num": "100%",  "label": "Individuelle Lösungen" },
+    { "num": "48h",   "label": "Reaktionszeit" },
+    { "num": "∞",     "label": "Kreative Ideen" }
+  ],
+  "services": [
+    { "icon": "🎨", "title": "Individuelles Webdesign",  "desc": "Kein Template, keine Kompromisse. Jede Website wird von Grund auf für Ihr Unternehmen designed – einzigartig und unverwechselbar.", "tag": "Maßgeschneidert" },
+    { "icon": "🖥️", "title": "Kostenlose Demo",          "desc": "Bevor Sie sich entscheiden, erhalten Sie eine vollständige Demo Ihrer Website – ohne Kosten, ohne Risiko. Überzeugen Sie sich selbst.", "tag": "0 € Demo" },
+    { "icon": "📱", "title": "Responsive Design",        "desc": "Ihre Website sieht auf jedem Gerät perfekt aus – ob Desktop, Tablet oder Smartphone. Mobile-First ist für uns Standard.", "tag": "Mobile-First" },
+    { "icon": "⚡", "title": "Performance & SEO",        "desc": "Schnelle Ladezeiten und technisch optimierter Code sorgen dafür, dass Ihre Website bei Google gefunden wird und Nutzer begeistert.", "tag": "Top-Speed" },
+    { "icon": "🔧", "title": "Technischer Support",      "desc": "Wir sind für Sie da. Bei Fragen, Änderungen oder Problemen reagieren wir innerhalb von 48 Stunden – zuverlässig und kompetent.", "tag": "48h Reaktion" },
+    { "icon": "🔄", "title": "Updates & Pflege",         "desc": "Regelmäßige Updates halten Ihre Website aktuell, sicher und leistungsfähig. Wir kümmern uns darum, damit Sie es nicht müssen.", "tag": "Rundum-Schutz" }
+  ],
+  "process": [
+    { "num": "01", "title": "Kostenlose Demo anfragen",  "desc": "Füllen Sie unser Formular aus und beschreiben Sie Ihr Projekt. Wir melden uns innerhalb von 48 Stunden bei Ihnen." },
+    { "num": "02", "title": "Demo erhalten & begutachten","desc": "Wir erstellen eine individuelle Demo Ihrer Website. Sie sehen das Ergebnis, bevor Sie sich festlegen – ganz ohne Kosten." },
+    { "num": "03", "title": "Anpassungen & Freigabe",   "desc": "Gemeinsam perfektionieren wir die Website nach Ihren Wünschen. Erst wenn alles stimmt, gehen wir live." },
+    { "num": "04", "title": "Go Live & Support",         "desc": "Ihre Website geht online. Mit einem unserer Hosting-Pakete sind Sie langfristig bestens betreut." }
+  ],
+  "pricing": [
+    {
+      "duration": "6 Monate",
+      "price": "60",
+      "total": "360",
+      "featured": false,
+      "features": ["Professionelles Hosting","Technischer Support","Regelmäßige Updates","Max. 48h Reaktionszeit","SSL-Zertifikat inklusive"]
+    },
+    {
+      "duration": "12 Monate",
+      "price": "50",
+      "total": "600",
+      "featured": true,
+      "featuredLabel": "⭐ Beliebteste Wahl",
+      "features": ["Professionelles Hosting","Technischer Support","Regelmäßige Updates","Max. 48h Reaktionszeit","SSL-Zertifikat inklusive","Monatlicher Bericht"]
+    },
+    {
+      "duration": "24 Monate",
+      "price": "40",
+      "total": "960",
+      "featured": false,
+      "features": ["Professionelles Hosting","Technischer Support","Regelmäßige Updates","Max. 48h Reaktionszeit","SSL-Zertifikat inklusive","Monatlicher Bericht","Beste Ersparnis"]
+    }
+  ],
+  "legal": {
+    "impressum": {
+      "name": "Benjamin Bonk",
+      "role": "Webdesign, Webhosting und IT-Support",
+      "street": "Römerstraße 4",
+      "city": "82284 Grafrath",
+      "phone": "015906355958",
+      "email": "webdesign.cobe@gmail.com",
+      "beruf": "Anderer Beruf",
+      "verantwortlich": "Benjamin Bonk, Römerstraße 4, 82284 Grafrath"
+    },
+    "datenschutz": {
+      "verantwortlich": "Benjamin Bonk · Römerstraße 4, 82284 Grafrath",
+      "phone": "015906355958",
+      "email": "webdesign.cobe@gmail.com",
+      "rechte": ["Auskunft über gespeicherte Daten","Berichtigung oder Löschung Ihrer Daten","Widerruf erteilter Einwilligungen","Einschränkung der Verarbeitung"]
+    }
+  }
+}
