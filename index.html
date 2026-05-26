@@ -312,7 +312,41 @@
   </div>
 </footer>
 
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie Hinweis" hidden>
+  <div class="cookie-copy">
+    <p class="cookie-title">Cookies & Datenschutz</p>
+    <p>Diese Website nutzt technisch notwendige Cookies, um Ihre Zustimmung zu speichern und die Seite zuverlässig bereitzustellen. Mit „Akzeptieren“ bestätigen Sie die geltenden <a href="datenschutz.html">Datenschutzrichtlinien</a>. © 2026 Webdesign Cobe.</p>
+  </div>
+  <div class="cookie-actions">
+    <a href="datenschutz.html" class="cookie-link">Datenschutz</a>
+    <button type="button" class="cookie-accept" id="cookieAccept">Akzeptieren</button>
+  </div>
+</div>
+
 <script>
+  // Cookie consent
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieAccept = document.getElementById('cookieAccept');
+  const consentKey = 'webdesign_cobe_cookie_consent';
+  const hasCookieConsent = localStorage.getItem(consentKey) === 'accepted'
+    || document.cookie.split('; ').some(cookie => cookie.startsWith(`${consentKey}=accepted`));
+
+  if (!hasCookieConsent && cookieBanner) {
+    cookieBanner.hidden = false;
+    requestAnimationFrame(() => cookieBanner.classList.add('visible'));
+  }
+
+  cookieAccept?.addEventListener('click', () => {
+    const expires = new Date();
+    expires.setFullYear(expires.getFullYear() + 1);
+    localStorage.setItem(consentKey, 'accepted');
+    document.cookie = `${consentKey}=accepted; expires=${expires.toUTCString()}; path=/; SameSite=Lax`;
+    cookieBanner.classList.remove('visible');
+    setTimeout(() => {
+      cookieBanner.hidden = true;
+    }, 350);
+  });
+
   // Hamburger menu
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('navLinks');
