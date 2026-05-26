@@ -666,6 +666,12 @@
     margin-top: 3rem;
   }
 
+  .pricing-grid-two {
+    grid-template-columns: repeat(2, minmax(min(320px, 100%), 1fr));
+    max-width: 920px;
+    margin-inline: auto;
+  }
+
   .price-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -1159,6 +1165,10 @@
       grid-template-columns: 1fr;
       gap: 1rem;
       margin-top: 2rem;
+    }
+
+    .pricing-grid-two {
+      max-width: none;
     }
 
     /* Disable float animations on mobile for performance */
