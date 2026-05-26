@@ -349,6 +349,18 @@
   }, { threshold: 0.08 });
   reveals.forEach(el => observer.observe(el));
 
+  // Subtle cursor-reactive light for service cards
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('pointermove', event => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--glow-x', `${x}%`);
+      card.style.setProperty('--glow-y', `${y}%`);
+    });
+  });
+
   // Form submission
   document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
